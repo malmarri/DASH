@@ -41,7 +41,7 @@ Fast, robust, and dependency-free Python tool to **date shared ancestral founder
 
 ## Overview & Rationale
 
-When unrelated or distantly related individuals inherit a common ancestral mutation from a shared founder, the mutation resides on an ancestral chromosome segment preserved through generations. The length of this conserved ancestral haplotype shrinks over time due to meiotic recombination. By measuring the length of these shared segments (in centiMorgans, cM), we can estimate the time since the mutation arose.
+When distantly related individuals inherit a common ancestral mutation from a shared founder, the mutation resides on an ancestral chromosome segment preserved through generations. The length of this conserved ancestral haplotype shrinks over time due to meiotic recombination. By measuring the length of these shared segments (in centiMorgans, cM), we can estimate the time since the mutation arose.
 
 ### Why Unphased Data Works for Homozygous Recessive Mutations
 Statistical phasing in rare disease cohorts can be challenging due to small sample sizes. However, for individuals who are **homozygous for the same recessive mutation**, phasing is **not required**. Because both homologous chromosomes carry the founder allele, ancestral segments are directly defined by continuous runs of **identical homozygous markers** flanking the mutation. Any discordant marker (a heterozygous call or an opposite homozygote) signals the termination of ancestral sharing.
