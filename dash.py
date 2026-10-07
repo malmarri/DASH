@@ -2,17 +2,10 @@
 """
 dash.py
 
-(renamed from date_ancestral_segments.py 2026-08-28; same script)
-
 Date a shared founder mutation from an *unphased* VCF: call the ancestral
 segments, convert to genetic distance, and estimate its age -- this is the
 whole point of the script, so --age-estimate runs by default whenever a
 genetic map is given (pass --no-age-estimate to only do segment calling).
-
-Along the way, this also builds the input file for the WEHI mutation-dating /
-"Age of Mutation" app
-(https://shiny.wehi.edu.au/rafehi.h/mutation-dating/) starting from an
-*unphased* VCF.
 
 The app's default input is a headerless, tab-separated, 3-column table:
 
